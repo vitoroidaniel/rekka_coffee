@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cafenea Scratch & Win</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>☕ Scratch & Win!</h1>
+        <p class="instructions">Zgârie 3 lămâi la rând pentru a câștiga!</p>
+        
+        <div class="scratch-grid" id="grid"></div>
+        
+        <div class="wheel-container hidden" id="wheelContainer">
+            <div class="wheel-arrow"><i class="fas fa-arrow-down"></i></div>
+            <h2>Roata Norocului</h2>
+            <div class="wheel" id="wheel"></div>
+            <button id="spinBtn">SPIN!</button>
+        </div>
+        
+        <div class="result hidden" id="result"></div>
+    </div>
+
+    <audio id="scratchSound" src="https://assets.mixkit.co/sfx/preview/mixkit-slot-machine-spin-1930.mp3"></audio>
+    <audio id="winSound" src="https://assets.mixkit.co/sfx/preview/mixkit-winning-chimes-2015.mp3"></audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
